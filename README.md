@@ -178,29 +178,7 @@ To https://github.com/nsu-syspro/mpt-github-classroom-tutorial-<your-github-name
 
 После отправки решения на сервер, автоматически запустятся тесты проверяющие корректность решения.
 Результат можно посмотреть в *пулл-реквесте* [Feedback](/../../pull/1), доступном во вкладке `Pull requests`
-на странице репозитория в браузере.
-
-> [!IMPORTANT]
-> Если *пулл-реквест* [Feedback](/../../pull/1) не создался автоматически, то необходимо создать его вручную
-> с помощью следуюших заклинаний:
-> ```console
-> $ git branch feedback $(git log --format='%h' | tail -n1) && git commit --allow-empty -m 'Feedback' && git push origin main feedback
-> $ gh repo set-default $(git remote get-url origin | sed 's/^.*://' | sed 's/\.git$//') && gh pr create --base feedback --title Feedback --body ''
-> ```
-> 
-> Второе заклинание можно выполнить без утилиты `gh` через web-интерфейс GitHub перейдя по следующей ссылке
-> (и подставив там ваш ник в GitHub в двух местах):
-> ```
-> https://github.com/nsu-syspro/mpt-github-classroom-tutorial-<your-github-name>/compare/nsu-syspro:mpt-github-classroom-tutorial-<your-github-name>:feedback...main
-> ```
-> 
-> Затем нужно нажать **"Create pull request"**:
-> 
-> ![](/images/feedback-pr.png)
->
-> Затем достаточно заполнить поле **"Title"** и нажать **"Create pull request"**:
-> 
-> ![](/images/feedback-pr-title.png)
+на странице репозитория в браузере. Пулл-реквест создастся автоматически после первой отправки решения.
 
 > Можно открыть пулл-реквест [Feedback](/../../pull/1) напрямую из терминала:
 > ```console
@@ -229,8 +207,15 @@ To https://github.com/nsu-syspro/mpt-github-classroom-tutorial-<your-github-name
 решения и оставлять замечания, которые необходимо будет исправить.
 
 > [!TIP]
-> Для того, чтобы попросить преподавателя проверить ваше решение, достаточно *упомянуть* его в комментарии
-> к пулл-реквесту, например:
+> Для того, чтобы попросить преподавателя проверить ваше решение,
+> достаточно выбрать его в поле "Reviewers" в пулл-реквесте:
+>
+> ![](/images/feedback-pr-reviewers.png)
+>
+> Тогда преподавателю придет оповещение о том, что ваше решение нужно проверить.
+>
+> Дополнительно можно *упомянуть* преподавателя в комментарии к пулл-реквесту, например:
 > ```
 > Please review @<teacher-github-username>
 > ```
+
