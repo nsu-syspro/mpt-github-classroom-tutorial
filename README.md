@@ -193,7 +193,7 @@ To https://github.com/nsu-syspro/mpt-github-classroom-tutorial-<your-github-name
 
 ![](/images/checks-passed.png)
 
-В противном случае будет написано **"All checks have failed"** и нажав на ссылку **"Details"** можно
+В противном случае будет написано **"Some checks were not successful"** и нажав на ссылку **"View details"** можно
 увидеть более детально, какие проверки не прошли и почему.
 
 ![](/images/checks-failed.png)
@@ -208,7 +208,7 @@ To https://github.com/nsu-syspro/mpt-github-classroom-tutorial-<your-github-name
 
 > [!TIP]
 > Для того, чтобы попросить преподавателя проверить ваше решение,
-> достаточно выбрать его в поле "Reviewers" в пулл-реквесте:
+> достаточно выбрать его в поле `Reviewers` в пулл-реквесте:
 >
 > ![](/images/feedback-pr-reviewers.png)
 >
