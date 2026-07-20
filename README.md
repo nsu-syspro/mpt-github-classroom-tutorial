@@ -91,8 +91,8 @@ $ git config --global user.name "Your Name"
 ![](/images/clone-repo.png)
 
 ```console
-$ gh repo clone nsu-syspro/mpt-github-classroom-tutorial-<your-github-username>
-Cloning into 'mpt-github-classroom-tutorial-<your-github-username>'...
+$ gh repo clone nsu-syspro/intro-github-classroom-tutorial-<your-github-username>
+Cloning into 'intro-github-classroom-tutorial-<your-github-username>'...
 remote: Enumerating objects: 24, done.
 remote: Counting objects: 100% (24/24), done.
 remote: Compressing objects: 100% (17/17), done.
@@ -101,18 +101,18 @@ Receiving objects: 100% (24/24), 5.80 KiB | 594.00 KiB/s, done.
 Resolving deltas: 100% (1/1), done.
 ```
 
-В результате создастся директория `mpt-github-classroom-tutorial-<your-github-username>`
+В результате создастся директория `intro-github-classroom-tutorial-<your-github-username>`
 с полной копией репозитория задания, в которую можно перейти с помощью
 
 ```console
-$ cd `mpt-github-classroom-tutorial-<your-github-username>`
+$ cd `intro-github-classroom-tutorial-<your-github-username>`
 ```
 
 > При клонировании репозитория можно явно задать имя директории, в которой окажется репозиторий.
 >
 > Например, следующая команда склонирует репозиторий в директорию `tutorial`:
 > ```console
-> $ gh repo clone nsu-syspro/mpt-github-classroom-tutorial-<your-github-username> tutorial
+> $ gh repo clone nsu-syspro/intro-github-classroom-tutorial-<your-github-username> tutorial
 > Cloning into 'tutorial'...
 > ...
 > ```
@@ -170,7 +170,7 @@ Counting objects: 100% (5/5), done.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (4/4), 390 bytes | 390.00 KiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/nsu-syspro/mpt-github-classroom-tutorial-<your-github-name>.git
+To https://github.com/nsu-syspro/intro-github-classroom-tutorial-<your-github-name>.git
    7586242..f356f32  main -> main
 ```
 
